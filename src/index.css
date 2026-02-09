@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  /* Mapping Tailwind core to your brand palette */
+  --color-background: white;
+  --color-foreground: var(--brand-blue);
+  --color-primary: var(--brand-orange);
+  --color-border: var(--blue-pale);
+
+  /* Specific brand colors */
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-blue: var(--brand-blue);
+  --color-blue-dark: var(--blue-dark);
+  --color-blue-medium: var(--blue-medium);
+  --color-blue-light: var(--blue-light);
+  --color-blue-pale: var(--blue-pale);
+  
+}
+
+@layer base {
+  :root {
+    --brand-orange: #FE862F;
+    --brand-blue: #003BBC;
+    
+    /* Blue Palette */
+    --blue-dark: #003BBC;
+    --blue-medium: #235BEA;
+    --blue-light: #1159ED;
+    --blue-pale: #D3D9FA;
+
+    /* Orange Palette */
+    --orange-main: #FE862F;
+    --orange-light: #FFD179;
+  }
+
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    background-color: white;
+    color: var(--brand-blue);
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  @media (width >= 640px) {
+    max-width: 640px;
+  }
+  @media (width >= 768px) {
+    max-width: 768px;
+  }
+  @media (width >= 1024px) {
+    max-width: 1024px;
+  }
+  @media (width >= 1280px) {
+    max-width: 1280px;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+@utility card-hover {
+  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
