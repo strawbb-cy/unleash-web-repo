@@ -14,11 +14,11 @@ export const HeroSection = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-7xl font-black text-brand-orange mb-4 tracking-tight drop-shadow-md">
+        <h1 className="text-4xl md:text-7xl font-fredoka font-semibold text-brand-orange mb-4 tracking-tight drop-shadow-md">
           Unleash Web Developers
         </h1>
         
-        <p className="text-lg md:text-2xl text-white max-w-2xl mx-auto mb-8 font-medium leading-relaxed">
+        <p className="text-lg md:text-2xl text-white max-w-2xl mx-auto mb-8 font-crimson-text font-medium leading-relaxed">
           A collaborative team building and maintaining internal web solutions.
         </p>
 

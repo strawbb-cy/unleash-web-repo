@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fredoka:wght@300..700&display=swap');
+
 @import "tailwindcss";
 
 @theme {
@@ -15,6 +17,8 @@
   --color-blue-light: var(--blue-light);
   --color-blue-pale: var(--blue-pale);
   
+  --font-fredoka: Fredoka, "sans-serif";
+  --font-crimson-text: Crimson Text, "sans-serif";
 }
 
 @layer base {
